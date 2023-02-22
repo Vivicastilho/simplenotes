@@ -1,4 +1,5 @@
 import { Button } from '../../Components/Button';
+import { ButtonText } from '../../Components/ButtonText';
 import { Header } from '../../Components/Header';
 import { Container, Content } from './styles';
 
@@ -6,6 +7,7 @@ export function Details() {
   return (
     <Container>
       <Header />
+      <ButtonText title="Excluir Nota" />
       <Content>
         <div>
           <h1>Anotações do Curso de Design</h1>
