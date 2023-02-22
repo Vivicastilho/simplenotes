@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-export default function Details() {
+export function Details() {
   return (
     <Container>
       <div>
