@@ -9,4 +9,11 @@ export default createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   }
+  body, input, textarea, button {
+    font-family: "Poppins" sans-serif;
+   
+  }
+  button {
+    cursor: pointer;
+  }
 `;

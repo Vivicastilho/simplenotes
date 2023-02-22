@@ -5,6 +5,7 @@ export default {
 
     FONT_BLACK: '#333333',
     TEXT_COLOR: '#999591',
+    FONT_WHITE: '#CCCCCC',
 
     LINE_COLOR: '#3E3B47',
 
