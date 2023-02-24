@@ -1,14 +1,16 @@
 import { Button } from '../../Components/Button';
 import { ButtonText } from '../../Components/ButtonText';
 import { Header } from '../../Components/Header';
+import { Links } from '../../Components/Links';
 import { Container, Content } from './styles';
 
 export function Details() {
+  const array = ['www.alura.com', 'www.rocketseat.com', 'vivicastilho.com.br'];
   return (
     <Container>
       <Header />
-      <ButtonText title="Excluir Nota" />
       <Content>
+        <ButtonText className="buttonText" title="Excluir Nota" />
         <div>
           <h1>Anotações do Curso de Design</h1>
           <p>
@@ -20,6 +22,8 @@ export function Details() {
           </p>
         </div>
       </Content>
+      <Links title="Links" array={array} nome="vivi" />
+
       <Button title="Enviar" />
     </Container>
   );
