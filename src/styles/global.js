@@ -11,6 +11,8 @@ export default createGlobalStyle`
   }
   body, input, textarea, button {
     font-family: "Poppins" sans-serif;
+
+    -webkit-font-smoothing: antialiased;
    
   }
   button {
