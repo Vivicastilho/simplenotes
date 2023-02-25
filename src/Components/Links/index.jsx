@@ -5,8 +5,10 @@ export function Links({ title, array }) {
     <Container>
       <h2>{title}</h2>
       <ul>
-        {array.map((e) => (
-          <li>{e}</li>
+        {array.map((e, index) => (
+          <li key={index}>
+            <a href={e}>{e}</a>
+          </li>
         ))}
       </ul>
     </Container>

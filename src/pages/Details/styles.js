@@ -13,7 +13,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 550px;
-    margin: 40px auto;
+    margin: 30px auto;
   }
 
   .buttonText {
@@ -28,7 +28,7 @@ export const Container = styled.div`
 export const Content = styled.main`
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 550px;
   height: 300px;
   color: ${({ theme }) => theme.COLORS.FONT_WHITE};
@@ -46,13 +46,3 @@ export const Content = styled.main`
     margin: 25px auto;
   }
 `;
-
-// export const Links = styled.ul`
-//   list-style: none;
-//   font-family: 'Poppins', sans-serif;
-//   font-size: 30px;
-
-//   > li {
-//     margin-top: 12px;
-//   }
-// `;

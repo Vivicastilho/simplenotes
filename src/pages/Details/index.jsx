@@ -2,10 +2,14 @@ import { Button } from '../../Components/Button';
 import { ButtonText } from '../../Components/ButtonText';
 import { Header } from '../../Components/Header';
 import { Links } from '../../Components/Links';
+import { Tags } from '../../Components/Tags';
 import { Container, Content } from './styles';
 
 export function Details() {
-  const array = ['www.alura.com', 'www.rocketseat.com', 'vivicastilho.com.br'];
+  const array = ['https://www.allura.com', 'https://www.origamid.com', ,];
+
+  const marcadores = ['Design', 'UI/UX'];
+
   return (
     <Container>
       <Header />
@@ -22,8 +26,8 @@ export function Details() {
           </p>
         </div>
       </Content>
-      <Links title="Links" array={array} nome="vivi" />
-
+      <Links title="Links" array={array} />
+      <Tags title="Tags" marcadores={marcadores} />
       <Button title="Enviar" />
     </Container>
   );
