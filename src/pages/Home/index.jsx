@@ -14,26 +14,29 @@ export function Home() {
       <Content>
         <nav>
           <h1>Simple Notes</h1>
-          <ButtonText className="navigation" title="Início" />
-          <ButtonText className="navigation" title="Minhas Notas" />
-          <ButtonText className="navigation" title="Tasks" />
-          <ButtonText className="navigation" title="Compras" />
-          <Button title="Criar Nota" />
+          <div className="menu">
+            <ButtonText className="navigation" title="Início" />
+            <ButtonText className="navigation" title="Minhas Notas" />
+            <ButtonText className="navigation" title="Tasks" />
+            <ButtonText className="navigation" title="Compras" />
+          </div>
+          <Button className="criarNota" title="Criar Nota" />
         </nav>
         <main>
           <Header />
-          <Input className="text" title="Pesquisar" />
-
-          <h1>Minhas Notas</h1>
-          <Listas>
-            <Tags title="Anotações do curso de Design" tags={marcadores} />
-          </Listas>
-          <Listas>
-            <Tags title="Gastos da Semana" tags={gastos} />
-          </Listas>
-          <Listas>
-            <Tags title="Lista de Livros" tags={livros} />
-          </Listas>
+          <div className="listaNota">
+            <Input className="text" title="Pesquisar" />
+            <h1>Minhas Notas</h1>
+            <Listas>
+              <Tags title="Anotações do curso de Design" tags={marcadores} />
+            </Listas>
+            <Listas>
+              <Tags title="Gastos da Semana" tags={gastos} />
+            </Listas>
+            <Listas>
+              <Tags title="Lista de Livros" tags={livros} />
+            </Listas>
+          </div>
         </main>
       </Content>
     </Container>

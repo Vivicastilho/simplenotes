@@ -18,13 +18,14 @@ export const Content = styled.section`
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  height: 100%;
 
   nav {
     background: ${({ theme }) => theme.COLORS.NAV_BACKGROUND};
     width: 250px;
-    height: 2000px;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     padding: 0;
     padding-top: 0px;
@@ -46,6 +47,14 @@ export const Content = styled.section`
       border-bottom-color: ${({ theme }) => theme.COLORS.LINE_COLOR};
     }
   }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: -550px;
+    gap: 20px;
+  }
   .navigation {
     display: flex;
     color: ${({ theme }) => theme.COLORS.TEXT_COLOR};
@@ -58,15 +67,28 @@ export const Content = styled.section`
     transition: 0.3s;
   }
 
+  .criarNota {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .listaNota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
   main {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 50px;
-    margin-top: 50px;
-    margin: 50px auto;
-
-    > h1 {
+    h1 {
       font-family: 'Poppins', sans-serif;
       font-size: 30px;
       font-weight: 600;
