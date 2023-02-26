@@ -1,17 +1,16 @@
 import { Container } from './styles';
 
-export function Tags({ title, marcadores }) {
+export function Tags({ title, tags }) {
   return (
     <Container>
       <h2>{title}</h2>
       <ul>
-        {marcadores.map((e) => (
-          <li key="{tag}">
+        {tags.map((e, index) => (
+          <li key={index}>
             <a href={e}>{e}</a>
           </li>
         ))}
       </ul>
     </Container>
   );
-  return;
 }
