@@ -1,10 +1,12 @@
 import { Container } from './styles';
-import { RiSearchLine } from 'react-icons/ri';
+import { RiSearchLine, RiUserLine, RiLock2Line } from 'react-icons/ri';
 
-export function Input({ title, ...rest }) {
+export function Input({ title, icon = 'search', ...rest }) {
   return (
     <Container>
-      <RiSearchLine />
+      {icon === 'search' && <RiSearchLine />}
+      {icon === 'user' && <RiUserLine />}
+      {icon === 'senha' && <RiLock2Line />}
       <input {...rest} />
     </Container>
   );
