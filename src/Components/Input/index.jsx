@@ -1,9 +1,11 @@
 import { Container } from './styles';
+import { RiSearchLine } from 'react-icons/ri';
 
-export function Input({ title }) {
+export function Input({ title, ...rest }) {
   return (
     <Container>
-      <input type="text" placeholder={title} />
+      <RiSearchLine />
+      <input {...rest} />
     </Container>
   );
 }

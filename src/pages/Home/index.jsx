@@ -1,4 +1,6 @@
 import { Header } from '../../Components/Header';
+
+import { HiOutlinePlus } from 'react-icons/hi';
 import { Input } from '../../Components/Input';
 import { ButtonText } from '../../Components/ButtonText';
 import { Button } from '../../Components/Button';
@@ -25,15 +27,15 @@ export function Home() {
         <main>
           <Header />
           <div className="listaNota">
-            <Input className="text" title="Pesquisar" />
-            <h1>Minhas Notas</h1>
-            <Listas>
+            <Input className="text" placeholder="Pesquisar" />
+            <h3>Minhas Notas</h3>
+            <Listas className="tag">
               <Tags title="Anotações do curso de Design" tags={marcadores} />
             </Listas>
-            <Listas>
+            <Listas className="tag">
               <Tags title="Gastos da Semana" tags={gastos} />
             </Listas>
-            <Listas>
+            <Listas className="tag">
               <Tags title="Lista de Livros" tags={livros} />
             </Listas>
           </div>

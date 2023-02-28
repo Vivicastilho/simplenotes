@@ -5,13 +5,6 @@ export const Container = styled.div`
   height: 100vh;
   font-size: 18px;
   display: flex;
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    width: 100%;
-  }
 `;
 
 export const Content = styled.section`
@@ -73,31 +66,65 @@ export const Content = styled.section`
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    margin-bottom: 0;
   }
 
   .listaNota {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    margin: 20px auto;
     gap: 20px;
+  }
+
+  .listaNota h1 {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 20px auto;
   }
 
   main {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
     gap: 50px;
-    h1 {
+
+    h3 {
+      display: flex;
       font-family: 'Poppins', sans-serif;
       font-size: 30px;
       font-weight: 600;
-      margin-top: 60px;
+      padding: 10px;
+      margin: 40px;
+      width: 100%;
+
       color: ${({ theme }) => theme.COLORS.TEXT_COLOR};
 
-      border-bottom-width: 1px;
+      border-bottom: 1px;
       border-bottom-style: solid;
       border-bottom-color: ${({ theme }) => theme.COLORS.LINE_COLOR};
+
+      > header {
+        display: flex;
+
+        padding: 0 40px;
+      }
+    }
+
+    .tag {
+      display: flex;
+      align-items: flex-start;
+    }
+    .tag li {
+      margin-top: 10px;
+    }
+    .tag li a {
+      font-size: 12px;
     }
   }
 
@@ -114,7 +141,7 @@ export const Listas = styled.ul`
 
   flex-direction: column;
   background: ${({ theme }) => theme.COLORS.NAV_BACKGROUND};
-  width: 1062px;
+  width: 100%;
   height: 150px;
   border-radius: 10px;
 
