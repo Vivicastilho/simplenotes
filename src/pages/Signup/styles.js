@@ -5,10 +5,12 @@ export const Container = styled.div`
   display: flex;
   font-family: 'Poppins', sans-serif;
   flex-direction: row;
+  justify-content: space-between;
 
-  .signin {
+  .signup {
     display: flex;
     flex-direction: column;
+
     align-items: center;
     width: 50%;
     margin-top: 230px;
